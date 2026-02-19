@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram name="Page-1" id="LjIYXrhuKUZKi2k9K6Fn">
+    <mxGraphModel dx="1223" dy="2321" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lgIEp67-iGyywv6B32hO-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lg1m0iPTTMRxBoUDcZmf-1" target="lgIEp67-iGyywv6B32hO-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lg1m0iPTTMRxBoUDcZmf-1" target="lgIEp67-iGyywv6B32hO-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lg1m0iPTTMRxBoUDcZmf-1" target="lgIEp67-iGyywv6B32hO-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lg1m0iPTTMRxBoUDcZmf-1" target="lgIEp67-iGyywv6B32hO-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg1m0iPTTMRxBoUDcZmf-1" value="&lt;h2&gt;front&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="700" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-1" value="datacamp" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="70" width="110" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgIEp67-iGyywv6B32hO-3" target="lg1m0iPTTMRxBoUDcZmf-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-3" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="910" width="176" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgIEp67-iGyywv6B32hO-5" target="lgIEp67-iGyywv6B32hO-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgIEp67-iGyywv6B32hO-5" target="lgIEp67-iGyywv6B32hO-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-5" value="search backend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="380" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgIEp67-iGyywv6B32hO-6" target="lgIEp67-iGyywv6B32hO-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-6" value="card content backend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="480" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgIEp67-iGyywv6B32hO-7" target="lgIEp67-iGyywv6B32hO-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-7" value="basket backend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="480" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgIEp67-iGyywv6B32hO-8" target="lgIEp67-iGyywv6B32hO-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-8" value="checkout backend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="360" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-9" value="offerinfo backend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="240" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgIEp67-iGyywv6B32hO-14" target="lgIEp67-iGyywv6B32hO-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-14" value="index backend" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="120" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lgIEp67-iGyywv6B32hO-14" target="lgIEp67-iGyywv6B32hO-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-24" value="4 основные доменные области:&lt;div&gt;1. Поисковая страница&lt;/div&gt;&lt;div&gt;2. Карточка товара&lt;/div&gt;&lt;div&gt;3. Корзина&lt;/div&gt;&lt;div&gt;4. Чекаут&lt;/div&gt;&lt;div&gt;логика: флоу юзера обычно выглядит именно так. бекенды разбиты на логичные зоны ответственности, общие компоненты вынесены.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-50" width="310" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-26" value="1 вариант" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="-20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-28" value="2 вариант" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="15" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-30" value="report" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="410" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgIEp67-iGyywv6B32hO-31" target="lgIEp67-iGyywv6B32hO-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-31" value="&lt;h2&gt;front&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="590" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lgIEp67-iGyywv6B32hO-33" target="lgIEp67-iGyywv6B32hO-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-33" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1357" y="770" width="176" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-35" value="datacamp" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="170" width="110" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lgIEp67-iGyywv6B32hO-30" target="lgIEp67-iGyywv6B32hO-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-37" value="плюс:&amp;nbsp;&lt;div&gt;максимально простая архитектура&lt;/div&gt;&lt;div&gt;всегда понятно в какую репку писать код&lt;/div&gt;&lt;div&gt;легче согласовывать контракты&lt;/div&gt;&lt;div&gt;одно окно релизов&lt;/div&gt;&lt;div&gt;минусы:&lt;/div&gt;&lt;div&gt;единственная точка отказа&lt;/div&gt;&lt;div&gt;сложнее писать новый код(компиляцаия, тесты, бинарник большой)&lt;/div&gt;&lt;div&gt;тяжело масштабируется&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="860" width="720" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="lgIEp67-iGyywv6B32hO-38" value="плюсы:&amp;nbsp;&lt;div&gt;легче масштабируется&lt;/div&gt;&lt;div&gt;изолируются отказы&lt;/div&gt;&lt;div&gt;понятные зоны ответственности для команд&lt;/div&gt;&lt;div&gt;минусы:&lt;/div&gt;&lt;div&gt;сложнее инфраструктура&lt;/div&gt;&lt;div&gt;отладка и тестирование сложнее&lt;/div&gt;&lt;div&gt;сложнее согласовывать контракты&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="11" y="845" width="430" height="250" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
