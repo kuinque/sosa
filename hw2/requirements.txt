@@ -5,3 +5,5 @@ psycopg2-binary
 pydantic
 pydantic-settings
 datamodel-code-generator
+python-jose[cryptography]
+passlib[bcrypt]
