@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+pydantic[email]
+pydantic-settings
+datamodel-code-generator
+PyJWT>=2.8.0
+bcrypt>=4.1.0
+email-validator
