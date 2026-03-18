@@ -1,0 +1,140 @@
+version: '3.8'
+
+services:
+  # PostgreSQL for Flight Service
+  flight-db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: flight_db
+      POSTGRES_USER: flight_user
+      POSTGRES_PASSWORD: flight_password
+    volumes:
+      - flight_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U flight_user -d flight_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - flight-network
+
+  # PostgreSQL for Booking Service
+  booking-db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: booking_db
+      POSTGRES_USER: booking_user
+      POSTGRES_PASSWORD: booking_password
+    volumes:
+      - booking_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U booking_user -d booking_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - flight-network
+
+  # Redis Master
+  redis-master:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes --replica-announce-ip redis-master
+    volumes:
+      - redis_master_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - flight-network
+
+  # Redis Replica
+  redis-replica:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes --replicaof redis-master 6379 --replica-announce-ip redis-replica
+    depends_on:
+      redis-master:
+        condition: service_healthy
+    volumes:
+      - redis_replica_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - flight-network
+
+  # Redis Sentinel
+  redis-sentinel:
+    image: redis:7-alpine
+    command: redis-sentinel /etc/redis/sentinel.conf
+    depends_on:
+      redis-master:
+        condition: service_healthy
+      redis-replica:
+        condition: service_healthy
+    volumes:
+      - ./redis/sentinel.conf:/etc/redis/sentinel.conf:ro
+    networks:
+      - flight-network
+
+  # Flight Service (gRPC)
+  flight-service:
+    build:
+      context: ./flight-service
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: postgresql://flight_user:flight_password@flight-db:5432/flight_db
+      REDIS_SENTINEL_HOST: redis-sentinel
+      REDIS_SENTINEL_PORT: 26379
+      REDIS_MASTER_NAME: mymaster
+      GRPC_API_KEY: ${GRPC_API_KEY:-super-secret-api-key-12345}
+      GRPC_PORT: 50051
+    depends_on:
+      flight-db:
+        condition: service_healthy
+      redis-sentinel:
+        condition: service_started
+    ports:
+      - "50051:50051"
+    networks:
+      - flight-network
+
+  # Booking Service (REST)
+  booking-service:
+    build:
+      context: ./booking-service
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: postgresql://booking_user:booking_password@booking-db:5432/booking_db
+      FLIGHT_SERVICE_HOST: flight-service
+      FLIGHT_SERVICE_PORT: 50051
+      GRPC_API_KEY: ${GRPC_API_KEY:-super-secret-api-key-12345}
+      # Circuit Breaker settings
+      CB_FAILURE_THRESHOLD: 5
+      CB_RECOVERY_TIMEOUT: 30
+      CB_HALF_OPEN_REQUESTS: 1
+      # Retry settings
+      RETRY_MAX_ATTEMPTS: 3
+      RETRY_INITIAL_DELAY_MS: 100
+    depends_on:
+      booking-db:
+        condition: service_healthy
+      flight-service:
+        condition: service_started
+    ports:
+      - "8000:8000"
+    networks:
+      - flight-network
+
+volumes:
+  flight_db_data:
+  booking_db_data:
+  redis_master_data:
+  redis_replica_data:
+
+networks:
+  flight-network:
+    driver: bridge

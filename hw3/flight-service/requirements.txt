@@ -1,0 +1,8 @@
+grpcio==1.60.0
+grpcio-tools==1.60.0
+protobuf==4.25.2
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.25
+alembic==1.13.1
+redis==5.0.1
+python-dotenv==1.0.0
